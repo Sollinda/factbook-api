@@ -254,8 +254,9 @@
 <span class="nv">TYPE</span><span class="o">=</span>tld
 <span class="nv">ID</span><span class="o">=</span>.tw
 
+<span class="c"># Request</span>
 curl -X GET http://api.sollinda.com/v1/country-profiles/<span class="nv">$TYPE</span>/<span class="nv">$ID</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// Sample JSON response</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// JSON response</span>
 <span class="p">{</span>
   <span class="c1">// ...</span>
   <span class="s2">"Geography"</span><span class="p">:</span> <span class="p">{</span>
@@ -365,8 +366,9 @@ curl -X GET http://api.sollinda.com/v1/country-profiles/<span class="nv">$TYPE</
 <aside class="notice">CIA keeps an up-to-date list of country identifiers <a href="https://www.cia.gov/library/publications/the-world-factbook/appendix/appendix-d.html">here</a></aside>
 
 <h2 id="list-of-country-profiles">List of Country Profiles</h2>
-<pre class="highlight shell tab-shell"><code>curl -X GET http://api.sollinda.com/v1/country-profiles/list
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// Sample JSON response</span>
+<pre class="highlight shell tab-shell"><code><span class="c"># Request</span>
+curl -X GET http://api.sollinda.com/v1/country-profiles/list
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// JSON response</span>
 <span class="p">[</span>
   <span class="p">{</span>
     <span class="c1">// ...</span>
