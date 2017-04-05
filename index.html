@@ -4,344 +4,401 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>Sollinda API Documentation</title>
 
-    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
     <style>
       .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
-.highlight, .highlight .w {
-  color: #f8f8f2;
-  background-color: #272822;
-}
-.highlight .err {
-  color: #151515;
-  background-color: #ac4142;
-}
-.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
-  color: #505050;
-}
-.highlight .cp {
-  color: #f4bf75;
-}
-.highlight .nt {
-  color: #f4bf75;
-}
-.highlight .o, .highlight .ow {
-  color: #d0d0d0;
-}
-.highlight .p, .highlight .pi {
-  color: #d0d0d0;
-}
-.highlight .gi {
-  color: #90a959;
-}
-.highlight .gd {
-  color: #ac4142;
-}
 .highlight .gh {
-  color: #6a9fb5;
-  background-color: #151515;
-  font-weight: bold;
-}
-.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
-  color: #aa759f;
-}
-.highlight .kc {
-  color: #d28445;
-}
-.highlight .kt {
-  color: #d28445;
-}
-.highlight .kd {
-  color: #d28445;
-}
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #90a959;
+  color: #999999;
 }
 .highlight .sr {
-  color: #75b5aa;
+  color: #f6aa11;
 }
-.highlight .si {
-  color: #8f5536;
+.highlight .go {
+  color: #888888;
 }
-.highlight .se {
-  color: #8f5536;
+.highlight .gp {
+  color: #555555;
 }
-.highlight .nn {
-  color: #f4bf75;
+.highlight .gs {
 }
-.highlight .nc {
-  color: #f4bf75;
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
 }
 .highlight .no {
-  color: #f4bf75;
+  color: #66d9ef;
 }
-.highlight .na {
-  color: #6a9fb5;
+.highlight .kt {
+  color: #66d9ef;
 }
-.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
-  color: #90a959;
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
 }
 .highlight .ss {
-  color: #90a959;
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
 }
     </style>
-      <script src="javascripts/all.js"></script>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all_nosearch.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;]">
+  <body class="index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" />
+        <img src="images/navbar.png" alt="Navbar" />
       </span>
     </a>
     <div class="tocify-wrapper">
-      <img src="images/logo.png" />
-        <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
-        </div>
-        <div class="search">
-          <input type="text" class="search" id="input-search" placeholder="Search">
-        </div>
-        <ul class="search-results"></ul>
+      <img src="images/logo.png" alt="Logo" />
       <div id="toc">
       </div>
-        <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
-        </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
         <h1 id="introduction">Introduction</h1>
 
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Welcome to Sollinda&rsquo;s API documentation. XXX LOFTY PARAGRAPH ABOUT GIVING BACK TO THE COMMUNITY XXX. </p>
 
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p>If you have any questions regarding this API, please send an email to <a href="mailto:support@sollinda.com">support@sollinda.com</a> and we&rsquo;ll get back to you as soon as we can.</p>
 
-<p>This example API documentation page was created with <a href="https://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&rsquo;s documentation.</p>
+<h3 id="base-url">Base URL</h3>
 
-<h1 id="authentication">Authentication</h1>
+<p><code class="prettyprint">http://api.sollinda.com/v1</code></p>
 
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h1 id="country-profiles">Country Profiles</h1>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<p>Access country profiles from The World Factbook as JSON documents, originally published by the Central Intelligence Agency (CIA) in the public domain. For more information on The World Factbook, please refer directly to <a href="https://www.cia.gov/library/publications/the-world-factbook/">CIA&rsquo;s website</a>, or <a href="http://en.wikipedia.org/wiki/The_World_Factbook">this Wikipedia article</a>.</p>
+
+<p>Country profiles are accessed one-by-one either by the country&rsquo;s name, two or three-letter abbreviation, numerical identifier, or top-level domain.</p>
+
+<h3 id="base-url">Base URL</h3>
+
+<p><code class="prettyprint">http://api.sollinda.com/v1/country-profiles</code></p>
+
+<aside class="notice">This API has been generated and is kept up-to-date using <a href="https://github.com/opendatajson/factbook.json">opendatajson/factbook.json</a>. Many thanks to all contributors of factbook.json for making this API possible.</aside>
+
+<h2 id="single-country-profile">Single Country Profile</h2>
+<pre class="highlight shell tab-shell"><code><span class="c"># Using type "name"</span>
+<span class="nv">TYPE</span><span class="o">=</span>name
+<span class="nv">ID</span><span class="o">=</span>taiwan
+
+<span class="c"># Using type "iso-alpha-2"</span>
+<span class="nv">TYPE</span><span class="o">=</span>iso-alpha-2
+<span class="nv">ID</span><span class="o">=</span>tw
+
+<span class="c"># Using type "iso-alpha-3"</span>
+<span class="nv">TYPE</span><span class="o">=</span>iso-alpha-3
+<span class="nv">ID</span><span class="o">=</span>twn
+
+<span class="c"># Using type "tld"</span>
+<span class="nv">TYPE</span><span class="o">=</span>tld
+<span class="nv">ID</span><span class="o">=</span>.tw
+
+curl -X GET http://api.sollinda.com/v1/country-profiles/<span class="nv">$TYPE</span>/<span class="nv">$ID</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// Sample JSON response</span>
+<span class="p">{</span>
+  <span class="c1">// ...</span>
+  <span class="s2">"Geography"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">"Location"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">"text"</span><span class="p">:</span> <span class="s2">"Eastern Asia, islands bordering the East China Sea, 
+        Philippine Sea, South China Sea, and Taiwan Strait, 
+        north of the Philippines, off the southeastern coast of China"</span>
+    <span class="p">},</span>
+    <span class="s2">"Geographic coordinates"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">"text"</span><span class="p">:</span> <span class="s2">"23 30 N, 121 00 E"</span>
+    <span class="p">},</span>
+    <span class="s2">"Map references"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">"text"</span><span class="p">:</span> <span class="s2">"Southeast Asia"</span>
+    <span class="p">},</span>
+    <span class="s2">"Area"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">"total"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"text"</span><span class="p">:</span> <span class="s2">"35,980 sq km"</span>
+      <span class="p">},</span>
+      <span class="s2">"land"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"text"</span><span class="p">:</span> <span class="s2">"32,260 sq km"</span>
+      <span class="p">},</span>
+      <span class="s2">"water"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"text"</span><span class="p">:</span> <span class="s2">"3,720 sq km"</span>
+      <span class="p">},</span>
+      <span class="s2">"note"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"text"</span><span class="p">:</span> <span class="s2">"includes the Pescadores, Matsu, and Quemoy islands"</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">"Area - comparative"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">"text"</span><span class="p">:</span> <span class="s2">"slightly smaller than Maryland and Delaware combined"</span>
+    <span class="p">},</span>
+    <span class="s2">"Land boundaries"</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">"text"</span><span class="p">:</span> <span class="s2">"0 km"</span>
+    <span class="p">}</span>
+    <span class="c1">// ...</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<p>A specific country&rsquo;s profile as provided by The World Factbook.</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
+<h3 id="http-request-format">HTTP Request Format</h3>
 
-<blockquote>
-<p>Make sure to replace <code class="prettyprint">meowmeowmeow</code> with your API key.</p>
-</blockquote>
+<p><code class="prettyprint">GET http://api.sollinda.com/v1/country-profiles/&lt;type&gt;/&lt;id&gt;</code></p>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code class="prettyprint">Authorization: meowmeowmeow</code></p>
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
-<h1 id="kittens">Kittens</h1>
-
-<h2 id="get-all-kittens">Get All Kittens</h2>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre>
-
-<p>This endpoint retrieves all kittens.</p>
-
-<h3 id="http-request">HTTP Request</h3>
-
-<p><code class="prettyprint">GET http://example.com/api/kittens</code></p>
-
-<h3 id="query-parameters">Query Parameters</h3>
+<h3 id="request-parameters">Request Parameters</h3>
 
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
+<th></th>
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
+<td><code class="prettyprint">type</code></td>
+<td>The <a href="#country_identifier_type">Country Identifier Type</a> used to identify the country.</td>
 </tr>
 <tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td><code class="prettyprint">id</code></td>
+<td>The ID of a country for the given <code class="prettyprint">type</code> parameter. The ID should always be lowercased even if the standard referenced in <code class="prettyprint">type</code> uses another convention (e.g. <code class="prettyprint">tw</code> instead of <code class="prettyprint">TW</code> when querying for Taiwan).</td>
 </tr>
 </tbody></table>
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
+<aside class="notice">Refer to the list of <a href="#country_identifier_type">Country Identifier Types</a> for a list of supported values for the <code>type</code> parameter.</aside>
 
-<h2 id="get-a-specific-kitten">Get a Specific Kitten</h2>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h3 id="country-identifier-types">Country Identifier Types</h3>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<p>Country profiles are identified either by using the country name or by using a commonly regognized standard such as the two-letter country code used in ISO 3611-1 alpha-2.</p>
+
+<p>For a list of how to query for countries using the different standards, please click the links at the beginning of the description fields in the table below. Alternatively, for an exhaustive list of countries, territories, and its country identifying types, please refer to the <a href="#list-of-countries">List of Countries</a> request.</p>
+
+<table><thead>
+<tr>
+<th>Type&nbsp;Parameter</th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code class="prettyprint">name</code></td>
+<td>The lowercased and underscore-separated name of a country. <br>E.g. <code class="prettyprint">taiwan</code> for Taiwan or <code class="prettyprint">united_states</code> for USA.</td>
+</tr>
+<tr>
+<td><code class="prettyprint">iso-alpha-2</code></td>
+<td><a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">ISO 3611-1 alpha-2</a> codes are two-letter country codes as defined in ISO 3166-1. They are most prominently used for Internet&rsquo;s country-specific top-level domains, but also by banks (IBAN and SWIFT), United Nations, and others. <br>E.g. <code class="prettyprint">tw</code> for Taiwan, <code class="prettyprint">us</code> for USA, <code class="prettyprint">au</code> for Australia.</td>
+</tr>
+<tr>
+<td><code class="prettyprint">iso-alpha-3</code></td>
+<td><a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">ISO 3611-1 alpha-3</a> codes are similar to alpha-2 but uses three letters instead of two.<br> E.g. <code class="prettyprint">chn</code> for China and <code class="prettyprint">sgp</code> for Singapore.</td>
+</tr>
+<tr>
+<td><code class="prettyprint">iso-numeric</code></td>
+<td><a href="https://en.wikipedia.org/wiki/ISO_3166-1_numeric">ISO 3611-1 numeric</a> uses three-digit country codes.<br>E.g. <code class="prettyprint">158</code> for Taiwan or <code class="prettyprint">250</code> for France.</td>
+</tr>
+<tr>
+<td><code class="prettyprint">gec</code></td>
+<td><a href="https://www.cia.gov/library/publications/the-world-factbook/appendix/appendix-d.html">Geopolitical Entities and Codes (GEC)</a> is used by The World Factbook as primary country identifier. Note that this standard differens from the more widely used ISO-3611-1 alpha-2.<br>E.g. <code class="prettyprint">tw</code> for Taiwan, <code class="prettyprint">au</code> for Austria.</td>
+</tr>
+<tr>
+<td><code class="prettyprint">stanag</code></td>
+<td><a href="https://www.cia.gov/library/publications/the-world-factbook/appendix/appendix-d.html">STANAG 1059</a> is a three-letter identifier  established and maintained by the NATO for the purpose of providing a common set of geo-spatial identifiers for countries and territories.<br>E.g. <code class="prettyprint">twn</code> for Taiwan, <code class="prettyprint">tha</code> for Thailand.</td>
+</tr>
+<tr>
+<td><code class="prettyprint">tld</code></td>
+<td><a href="#">Top-level Domains</a>, e.g. <code class="prettyprint">.se</code> for Sweden or <code class="prettyprint">.tw</code> for Taiwan.</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">CIA keeps an up-to-date list of country identifiers <a href="https://www.cia.gov/library/publications/the-world-factbook/appendix/appendix-d.html">here</a></aside>
+
+<h2 id="list-of-country-profiles">List of Country Profiles</h2>
+<pre class="highlight shell tab-shell"><code>curl -X GET http://api.sollinda.com/v1/country-profiles/list
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="c1">// Sample JSON response</span>
+<span class="p">[</span>
+  <span class="p">{</span>
+    <span class="c1">// ...</span>
+  <span class="p">},</span> <span class="p">{</span>
+    <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"taiwan"</span>
+    <span class="s2">"iso-alpha-2"</span><span class="p">:</span> <span class="s2">"tw"</span><span class="p">,</span>
+    <span class="s2">"iso-alpha-3"</span><span class="p">:</span> <span class="s2">"twn"</span>
+    <span class="s2">"iso-numeric"</span><span class="p">:</span> <span class="s2">"158"</span><span class="p">,</span>
+    <span class="s2">"gec"</span><span class="p">:</span> <span class="s2">"twn"</span><span class="p">,</span>
+    <span class="s2">"nato"</span><span class="p">:</span> <span class="s2">"twn"</span><span class="p">,</span>
+    <span class="s2">"tld"</span><span class="p">:</span> <span class="s2">".tw"</span>
+  <span class="p">},</span> <span class="p">{</span>
+    <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"thailand"</span><span class="p">,</span>
+    <span class="s2">"iso-alpha-2"</span><span class="p">:</span> <span class="s2">"tw"</span><span class="p">,</span>
+    <span class="s2">"iso-alpha-3"</span><span class="p">:</span> <span class="s2">"twn"</span>
+    <span class="s2">"iso-numeric"</span><span class="p">:</span> <span class="s2">"158"</span><span class="p">,</span>
+    <span class="s2">"gec"</span><span class="p">:</span> <span class="s2">"twn"</span><span class="p">,</span>
+    <span class="s2">"nato"</span><span class="p">:</span> <span class="s2">"twn"</span><span class="p">,</span>
+    <span class="s2">"tld"</span><span class="p">:</span> <span class="s2">".tw"</span>
+  <span class="p">},</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+  <span class="p">}</span>
+<span class="p">]</span>
 </code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-
-<p>This endpoint retrieves a specific kitten.</p>
-
-<aside class="warning">Inside HTML code blocks like this one, you can&rsquo;t use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<p>A list of all country profiles provided by The World Factbook with associated Country Identifier Types.</p>
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://example.com/kittens/&lt;ID&gt;</code></p>
-
-<h3 id="url-parameters">URL Parameters</h3>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
-</tr>
-</tbody></table>
-
-          <h1 id="errors">Errors</h1>
-
-<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files&hellip;just save them to the `includes` folder and add them to the top of your `index.md`&rsquo;s frontmatter. Files are included in the order listed.</aside>
-
-<p>The Kittn API uses the following error codes:</p>
-
-<table><thead>
-<tr>
-<th>Error Code</th>
-<th>Meaning</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>400</td>
-<td>Bad Request &ndash; Your request sucks</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Unauthorized &ndash; Your API key is wrong</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Not Found &ndash; The specified kitten could not be found</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone &ndash; The kitten requested has been removed from our servers</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&rsquo;m a teapot</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests &ndash; You&rsquo;re requesting too many kittens! Slow down!</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error &ndash; We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable &ndash; We&rsquo;re temporarially offline for maintanance. Please try again later.</td>
-</tr>
-</tbody></table>
+<p><code class="prettyprint">GET http://api.sollinda.com/v1/country-profiles/list</code></p>
 
       </div>
       <div class="dark-box">
-          <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
-          </div>
       </div>
     </div>
   </body>
