@@ -100,16 +100,16 @@ A specific profile of a country, dependent territory, or special areas of geogra
 
 | Parameter |  |
 | --------- | ------- |
-| ```type``` | The [Country Identifier Type](#country_identifier_type) used to identify the country.
+| ```type``` | The [Country Identifier Type](#country-identifier-types) used to identify the country.
 | ```id``` | The ID of a country for the given ```type``` parameter. The ID should always be lowercased even if the standard referenced in ```type``` uses another convention (e.g. `tw` instead of `TW` when querying for Taiwan).
 
-<aside class="notice">Refer to the list of <a href="#country_identifier_type">Country Identifier Types</a> for a list of supported values for the <code>type</code> parameter.</aside>
+<aside class="notice">Refer to the list of <a href="#country-identifier-types">Country Identifier Types</a> for a list of supported values for the <code>type</code> parameter.</aside>
 
 ### Country Identifier Types
 
 Country profiles are identified either by using the country name or by using a commonly regognized standard such as the two-letter country code used in ISO 3611-1 alpha-2.
 
-For a better understanding of how the standards listed below work, please refer to the links in the description fields. Alternatively, for an exhaustive list of countrie, territories, and associated identifiers, take a look at the [List of Countries](#list-of-countries) request.
+For a better understanding of how the standards listed below work, please refer to the links in the description fields. Alternatively, for an exhaustive list of countrie, territories, and associated identifiers, take a look at the [List of Country Profiles](#list-of-country-profiles) request.
 
 | Type&nbsp;Parameter |   |
 | --------------- | - |
@@ -119,9 +119,8 @@ For a better understanding of how the standards listed below work, please refer 
 | ```iso-numeric``` | [ISO 3611-1 numeric](https://en.wikipedia.org/wiki/ISO_3166-1_numeric) uses three-digit country codes.<br>E.g. `158` for Taiwan or `250` for France. |
 | ```gec``` | [Geopolitical Entities and Codes (GEC)](https://www.cia.gov/library/publications/the-world-factbook/appendix/appendix-d.html) is used by The World Factbook as primary country identifier. Note that this standard differens from the more widely used ISO-3611-1 alpha-2.<br>E.g. `tw` for Taiwan, `au` for Austria.
 | ```stanag``` | [STANAG 1059](https://www.cia.gov/library/publications/the-world-factbook/appendix/appendix-d.html) is a three-letter identifier  established and maintained by the NATO for the purpose of providing a common set of geo-spatial identifiers for countries and territories.<br>E.g. `twn` for Taiwan, `tha` for Thailand. |
-| ```tld``` | [Top-level Domains](), e.g. `.se` for Sweden or `.tw` for Taiwan. |
+| ```tld``` | [Top-level Domains](https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains#Country_code_top-level_domains), e.g. `.se` for Sweden or `.tw` for Taiwan. |
 
-<aside class="notice">CIA keeps an up-to-date list of country identifiers <a href="https://www.cia.gov/library/publications/the-world-factbook/appendix/appendix-d.html">here</a></aside>
 
 ## List of Country Profiles
 
