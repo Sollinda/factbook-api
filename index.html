@@ -219,7 +219,7 @@
 
 <p>Welcome to Sollinda&rsquo;s API documentation.</p>
 
-<p>If you have any questions regarding this API, please send an email to <a href="mailto:support@sollinda.com">support@sollinda.com</a> and we&rsquo;ll get back to you as soon as we can. For clarifications and general language use in this document, please submit a pull-request to <code class="prettyprint">sollinda/docs</code>.</p>
+<p>If you have questions about this API, please send an <a href="mailto:support@sollinda.com">email to us</a> and we&rsquo;ll get back to you. For clarifications and language use, please submit a pull request to sollinda/docs on GitHub.</p>
 
 <h3 id="base-url">Base URL</h3>
 
@@ -227,15 +227,15 @@
 
 <h1 id="country-profiles">Country Profiles</h1>
 
-<p>Access profiles of countries, dependent territories, and special areas of geographical interest from The World Factbook as JSON documents, originally published by the Central Intelligence Agency (CIA) in the public domain. For more information on The World Factbook, and the type of data that it offers, please refer directly to <a href="https://www.cia.gov/library/publications/the-world-factbook/">CIA&rsquo;s website</a>, or <a href="http://en.wikipedia.org/wiki/The_World_Factbook">this Wikipedia article</a>.</p>
+<p>Access profiles of countries, dependent territories, and special areas of geographical interest. Profiles are accessed one-by-one by the country&rsquo;s name, two or three-letter abbreviation, a numerical identifier, or top-level domain.</p>
 
-<p>Profiles are accessed one-by-one by the country&rsquo;s name, two or three-letter abbreviation, numerical identifier, or top-level domain.</p>
+<p>The information is sourced from The World Factbook, published by the CIA in the public domain. To explore The World Factbook in its original form, please use <a href="https://www.cia.gov/library/publications/the-world-factbook/">CIA&rsquo;s website</a>. For more information, see <a href="http://en.wikipedia.org/wiki/The_World_Factbook">this Wikipedia article</a>.</p>
 
 <h3 id="base-url">Base URL</h3>
 
 <p><code class="prettyprint">http://api.sollinda.com/v1/country-profiles</code></p>
 
-<aside class="notice">This API has been generated and is kept up-to-date using <a href="https://github.com/opendatajson/factbook.json">opendatajson/factbook.json</a>. Many thanks to all contributors of factbook.json for making this API possible.</aside>
+<aside class="notice"><a href="https://github.com/opendatajson/factbook.json">opendatajson/factbook.json</a> is used to generate this API. Many thanks to the contributors of factbook.json for making this possible.</aside>
 
 <h2 id="single-country-profile">Single Country Profile</h2>
 <pre class="highlight shell tab-shell"><code><span class="c"># Using type "name"</span>
@@ -295,7 +295,7 @@ curl -X GET http://api.sollinda.com/v1/country-profiles/<span class="nv">$TYPE</
   <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
-<p>A specific profile of a country, dependent territory, or special areas of geographical interest as provided by The World Factbook.</p>
+<p>The profile of a country, dependent territory, or special areas of geographical interest as provided by The World Factbook.</p>
 
 <h3 id="http-request-format">HTTP Request Format</h3>
 
@@ -315,17 +315,17 @@ curl -X GET http://api.sollinda.com/v1/country-profiles/<span class="nv">$TYPE</
 </tr>
 <tr>
 <td><code class="prettyprint">id</code></td>
-<td>The ID of a country for the given <code class="prettyprint">type</code> parameter. The ID should always be lowercased even if the standard referenced in <code class="prettyprint">type</code> uses another convention (e.g. <code class="prettyprint">tw</code> instead of <code class="prettyprint">TW</code> when querying for Taiwan).</td>
+<td>The ID of a country for the given <code class="prettyprint">type</code> parameter. The ID should be lowercased even if the standard in <code class="prettyprint">type</code> uses a different convention.</td>
 </tr>
 </tbody></table>
 
-<aside class="notice">Refer to the list of <a href="#country-identifier-types">Country Identifier Types</a> for a list of supported values for the <code>type</code> parameter.</aside>
+<aside class="notice">Refer to the list of <a href="#country-identifier-types">Country Identifier Types</a> for all supported values for the <code>type</code> parameter.</aside>
 
 <h3 id="country-identifier-types">Country Identifier Types</h3>
 
-<p>Country profiles are identified either by using the country name or by using a commonly regognized standard such as the two-letter country code used in ISO 3611-1 alpha-2.</p>
+<p>Country profiles are identified by using the country name or a regognized standard such as the two-letter country code used in ISO 3611-1 alpha-2.</p>
 
-<p>For a better understanding of how the standards listed below work, please refer to the links in the description fields. Alternatively, for an exhaustive list of countrie, territories, and associated identifiers, take a look at the <a href="#list-of-country-profiles">List of Country Profiles</a> request.</p>
+<p>For more information about the standards, refer to the links in the description fields. Or, for a list of all countries with identifiers, use the <a href="#list-of-country-profiles">List of Country Profiles</a> endpoint.</p>
 
 <table><thead>
 <tr>
