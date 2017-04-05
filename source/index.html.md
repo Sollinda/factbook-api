@@ -46,10 +46,11 @@ ID=twn
 TYPE=tld
 ID=.tw
 
+# Request
 curl -X GET http://api.sollinda.com/v1/country-profiles/$TYPE/$ID
 ```
 ```javascript
-// Sample JSON response
+// JSON response
 {
   // ...
   "Geography": {
@@ -125,11 +126,12 @@ For a better understanding of how the standards listed below work, please refer 
 ## List of Country Profiles
 
 ```shell
+# Request
 curl -X GET http://api.sollinda.com/v1/country-profiles/list
 ```
 
 ```javascript
-// Sample JSON response
+// JSON response
 [
   {
     // ...
