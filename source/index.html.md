@@ -46,10 +46,11 @@ ID=twn
 TYPE=tld
 ID=.tw
 
+# Request
 curl -X GET http://api.sollinda.com/v1/country-profiles/$TYPE/$ID
 ```
 ```javascript
-// Sample JSON response
+// JSON response
 {
   // ...
   "Geography": {
@@ -125,33 +126,39 @@ For a better understanding of how the standards listed below work, please refer 
 ## List of Country Profiles
 
 ```shell
+# Request
 curl -X GET http://api.sollinda.com/v1/country-profiles/list
 ```
-
 ```javascript
-// Sample JSON response
+// JSON response
 [
+  // ... 
   {
-    // ...
-  }, {
-    "name": "taiwan"
-    "iso-alpha-2": "tw",
-    "iso-alpha-3": "twn"
     "iso-numeric": "158",
-    "gec": "twn",
-    "nato": "twn",
+    "iso-alpha-2": "tw",
+    "iso-alpha-3": "twn",
+    "gec": "tw",
+    "name": "taiwan",
+    "stanag": "twn",
     "tld": ".tw"
   }, {
-    "name": "thailand",
-    "iso-alpha-2": "tw",
-    "iso-alpha-3": "twn"
-    "iso-numeric": "158",
-    "gec": "twn",
-    "nato": "twn",
-    "tld": ".tw"
+    "iso-numeric": "762",
+    "iso-alpha-2": "tj",
+    "iso-alpha-3": "tjk",
+    "gec": "ti",
+    "name": "tajikistan",
+    "stanag": "tjk",
+    "tld": ".tj"
   }, {
-    // ...
+    "iso-numeric": "834",
+    "iso-alpha-2": "tz",
+    "iso-alpha-3": "tza",
+    "gec": "tz",
+    "name": "tanzania",
+    "stanag": "tza",
+    "tld": ".tz"
   }
+  // ...
 ]
 ```
 
