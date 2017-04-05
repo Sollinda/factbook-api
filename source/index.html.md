@@ -8,7 +8,8 @@ language_tabs:
 
 Welcome to Sollinda's API documentation.
 
-If you have any questions regarding this API, please send an email to <a href="mailto:support@sollinda.com">support@sollinda.com</a> and we'll get back to you as soon as we can. For clarifications and general language use in this document, please submit a pull-request to `sollinda/docs`.
+If you have questions about this API, please send an <a href="mailto:support@sollinda.com">email to us</a> and we'll get back to you. For clarifications and language use, please submit a pull request to sollinda/docs on GitHub.
+
 
 ### Base URL
 
@@ -16,16 +17,17 @@ If you have any questions regarding this API, please send an email to <a href="m
 
 # Country Profiles
 
-Access profiles of countries, dependent territories, and special areas of geographical interest from The World Factbook as JSON documents, originally published by the Central Intelligence Agency (CIA) in the public domain. For more information on The World Factbook, and the type of data that it offers, please refer directly to [CIA's website](https://www.cia.gov/library/publications/the-world-factbook/), or [this Wikipedia article](http://en.wikipedia.org/wiki/The_World_Factbook).
+Access profiles of countries, dependent territories, and special areas of geographical interest. Profiles are accessed one-by-one by the country's name, two or three-letter abbreviation, a numerical identifier, or top-level domain.
 
-Profiles are accessed one-by-one by the country's name, two or three-letter abbreviation, numerical identifier, or top-level domain.
+The information is sourced from The World Factbook, published by the CIA in the public domain. To explore The World Factbook in its original form, please use [CIA's website](https://www.cia.gov/library/publications/the-world-factbook/). For more information, see [this Wikipedia article](http://en.wikipedia.org/wiki/The_World_Factbook).
+
 
 ### Base URL
 
 `http://api.sollinda.com/v1/country-profiles`
 
 
-<aside class="notice">This API has been generated and is kept up-to-date using <a href="https://github.com/opendatajson/factbook.json">opendatajson/factbook.json</a>. Many thanks to all contributors of factbook.json for making this API possible.</aside>
+<aside class="notice"><a href="https://github.com/opendatajson/factbook.json">opendatajson/factbook.json</a> is used to generate this API. Many thanks to the contributors of factbook.json for making this possible.</aside>
 
 ## Single Country Profile
 
@@ -90,7 +92,7 @@ curl -X GET http://api.sollinda.com/v1/country-profiles/$TYPE/$ID
 }
 ```
 
-A specific profile of a country, dependent territory, or special areas of geographical interest as provided by The World Factbook.
+The profile of a country, dependent territory, or special areas of geographical interest as provided by The World Factbook.
 
 ### HTTP Request Format
 
@@ -101,15 +103,15 @@ A specific profile of a country, dependent territory, or special areas of geogra
 | Parameter |  |
 | --------- | ------- |
 | ```type``` | The [Country Identifier Type](#country-identifier-types) used to identify the country.
-| ```id``` | The ID of a country for the given ```type``` parameter. The ID should always be lowercased even if the standard referenced in ```type``` uses another convention (e.g. `tw` instead of `TW` when querying for Taiwan).
+| ```id``` | The ID of a country for the given ```type``` parameter. The ID should be lowercased even if the standard in ```type``` uses a different convention.
 
-<aside class="notice">Refer to the list of <a href="#country-identifier-types">Country Identifier Types</a> for a list of supported values for the <code>type</code> parameter.</aside>
+<aside class="notice">Refer to the list of <a href="#country-identifier-types">Country Identifier Types</a> for all supported values for the <code>type</code> parameter.</aside>
 
 ### Country Identifier Types
 
-Country profiles are identified either by using the country name or by using a commonly regognized standard such as the two-letter country code used in ISO 3611-1 alpha-2.
+Country profiles are identified by using the country name or a regognized standard such as the two-letter country code used in ISO 3611-1 alpha-2.
 
-For a better understanding of how the standards listed below work, please refer to the links in the description fields. Alternatively, for an exhaustive list of countrie, territories, and associated identifiers, take a look at the [List of Country Profiles](#list-of-country-profiles) request.
+For more information about the standards, refer to the links in the description fields. Or, for a list of all countries with identifiers, use the [List of Country Profiles](#list-of-country-profiles) endpoint.
 
 | Type&nbsp;Parameter |   |
 | --------------- | - |
