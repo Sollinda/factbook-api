@@ -21,7 +21,6 @@ Access profiles of countries, dependent territories, and special areas of geogra
 
 The information is sourced from The World Factbook, published by the CIA in the public domain. To explore The World Factbook in its original form, please use [CIA's website](https://www.cia.gov/library/publications/the-world-factbook/). For more information, see [this Wikipedia article](http://en.wikipedia.org/wiki/The_World_Factbook).
 
-
 ### Base URL
 
 `http://api.sollinda.com/v1/country-profiles`
@@ -92,7 +91,18 @@ curl -X GET http://api.sollinda.com/v1/country-profiles/$TYPE/$ID
 }
 ```
 
-The profile of a country, dependent territory, or special areas of geographical interest as provided by The World Factbook.
+The profile of a country, dependent territory, or special areas of geographical interest.
+
+<a target="_blank" href="http://www.jsoneditoronline.org/?url=http%3A%2F%2Fapi.sollinda.com%2Fv1%2Fcountry-profiles%2Fname%2Ftaiwan" style="
+  display: inline-block;
+  background: #1B62B2;
+  font-weight: bold;
+  padding:8px 16px;
+  text-decoration: none;
+  color: white;  
+  text-shadow: none;
+  border-radius: 3px
+">&#9654;&nbsp;&nbsp;&nbsp;Try it out</a>
 
 ### HTTP Request Format
 
@@ -120,7 +130,7 @@ For more information about the standards, refer to the links in the description 
 | ```iso-alpha-3``` | [ISO 3611-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) codes are similar to alpha-2 but uses three letters instead of two.<br> E.g. `chn` for China and `sgp` for Singapore. |
 | ```iso-numeric``` | [ISO 3611-1 numeric](https://en.wikipedia.org/wiki/ISO_3166-1_numeric) uses three-digit country codes.<br>E.g. `158` for Taiwan or `250` for France. |
 | ```gec``` | [Geopolitical Entities and Codes (GEC)](https://www.cia.gov/library/publications/the-world-factbook/appendix/appendix-d.html) is used by The World Factbook as primary country identifier. Note that this standard differens from the more widely used ISO-3611-1 alpha-2.<br>E.g. `tw` for Taiwan, `au` for Austria.
-| ```stanag``` | [STANAG 1059](https://www.cia.gov/library/publications/the-world-factbook/appendix/appendix-d.html) is a three-letter identifier  established and maintained by the NATO for the purpose of providing a common set of geo-spatial identifiers for countries and territories.<br>E.g. `twn` for Taiwan, `tha` for Thailand. |
+| ```stanag``` | [STANAG 1059](https://www.cia.gov/library/publications/the-world-factbook/appendix/appendix-d.html) is a three-letter identifier  established and maintained by NATO for the purpose of providing a common set of geo-spatial identifiers for countries and territories.<br>E.g. `twn` for Taiwan, `tha` for Thailand. |
 | ```tld``` | [Top-level Domains](https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains#Country_code_top-level_domains), e.g. `.se` for Sweden or `.tw` for Taiwan. |
 
 
@@ -164,6 +174,17 @@ curl -X GET http://api.sollinda.com/v1/country-profiles/list
 ```
 
 A list of all profiles provided by The World Factbook with associated Country Identifier Types.
+
+<a target="_blank" href="http://www.jsoneditoronline.org/?url=http%3A%2F%2Fapi.sollinda.com%2Fv1%2Fcountry-profiles%2Flist" style="
+  display: inline-block;
+  background: #1B62B2;
+  font-weight: bold;
+  padding:8px 16px;
+  text-decoration: none;
+  color: white;
+  text-shadow: none;
+  border-radius: 3px
+">&#9654;&nbsp;&nbsp;&nbsp;Try it out</a>
 
 
 ### HTTP Request
