@@ -311,7 +311,7 @@ curl -X GET http://api.sollinda.com/v1/country-profiles/<span class="nv">$TYPE</
 </thead><tbody>
 <tr>
 <td><code class="prettyprint">type</code></td>
-<td>The <a href="#country_identifier_type">Country Identifier Type</a> used to identify the country.</td>
+<td>The <a href="#country-identifier-types">Country Identifier Type</a> used to identify the country.</td>
 </tr>
 <tr>
 <td><code class="prettyprint">id</code></td>
@@ -319,13 +319,13 @@ curl -X GET http://api.sollinda.com/v1/country-profiles/<span class="nv">$TYPE</
 </tr>
 </tbody></table>
 
-<aside class="notice">Refer to the list of <a href="#country_identifier_type">Country Identifier Types</a> for a list of supported values for the <code>type</code> parameter.</aside>
+<aside class="notice">Refer to the list of <a href="#country-identifier-types">Country Identifier Types</a> for a list of supported values for the <code>type</code> parameter.</aside>
 
 <h3 id="country-identifier-types">Country Identifier Types</h3>
 
 <p>Country profiles are identified either by using the country name or by using a commonly regognized standard such as the two-letter country code used in ISO 3611-1 alpha-2.</p>
 
-<p>For a better understanding of how the standards listed below work, please refer to the links in the description fields. Alternatively, for an exhaustive list of countrie, territories, and associated identifiers, take a look at the <a href="#list-of-countries">List of Countries</a> request.</p>
+<p>For a better understanding of how the standards listed below work, please refer to the links in the description fields. Alternatively, for an exhaustive list of countrie, territories, and associated identifiers, take a look at the <a href="#list-of-country-profiles">List of Country Profiles</a> request.</p>
 
 <table><thead>
 <tr>
@@ -359,11 +359,9 @@ curl -X GET http://api.sollinda.com/v1/country-profiles/<span class="nv">$TYPE</
 </tr>
 <tr>
 <td><code class="prettyprint">tld</code></td>
-<td><a href="#">Top-level Domains</a>, e.g. <code class="prettyprint">.se</code> for Sweden or <code class="prettyprint">.tw</code> for Taiwan.</td>
+<td><a href="https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains#Country_code_top-level_domains">Top-level Domains</a>, e.g. <code class="prettyprint">.se</code> for Sweden or <code class="prettyprint">.tw</code> for Taiwan.</td>
 </tr>
 </tbody></table>
-
-<aside class="notice">CIA keeps an up-to-date list of country identifiers <a href="https://www.cia.gov/library/publications/the-world-factbook/appendix/appendix-d.html">here</a></aside>
 
 <h2 id="list-of-country-profiles">List of Country Profiles</h2>
 <pre class="highlight shell tab-shell"><code><span class="c"># Request</span>
